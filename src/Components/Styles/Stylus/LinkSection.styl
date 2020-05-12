@@ -1,0 +1,48 @@
+@import "../../../Styles/Stylus/_Global";
+.Container
+  background-color white
+  display flex
+  align-items: center;
+  padding 20px 20px
+  margin 15px 0
+  border-radius 10px
+  &__Hr
+    display none
+  &__Button
+    display flex
+    justify-content: space-evenly;
+    padding  0
+    button 
+      border-radius 5px
+  &__ShortLinks
+    display flex
+    padding  0
+    justify-content: flex-end;
+    & textarea 
+      color Cyan
+      width 210px
+      height 25px
+      resize none      
+      border none
+      &:focus
+        outline  none
+      &::selection
+        background-color white
+  &__Link
+    padding 0
+    & p
+      margin-bottom 0
+@media screen and (max-width: 992px)
+  .Container
+    flex-direction column
+    &__Hr
+      display block
+      padding 0
+    &__Link
+      text-align center
+    &__Button
+      flex-direction column
+      justify-content: center
+    &__ShortLinks
+      justify-content: center
+      margin-bottom 1em

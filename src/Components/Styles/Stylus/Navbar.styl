@@ -1,0 +1,63 @@
+@import "../../../Styles/Stylus/_Global";
+.Navbar
+  font-size 1em
+  font-weight WeightBolder
+  &__Toogler
+    border none 
+    font-weight WeightBolder
+    font-size Fontsize
+  &__Menu
+    justify-content space-between
+    border-radius 1.2em
+    & ul
+      display flex
+      list-style none      
+      margin-bottom 0
+      padding 0
+    & a:hover
+      color black 
+    & a
+      font-weight WeightBolder
+      color Gray
+      text-decoration none
+    &__Access
+      align-items center      
+      .button
+        border-radius 30px
+        padding 0.5em 1em
+        color white
+        &:hover
+          color white
+        &--login
+          background-color white
+          border none
+          color Gray
+          font-weight WeightBolder
+          &:hover
+            color black
+          &:focus
+            outline none
+            background-color white
+          
+    &__Hr
+      display none
+@media screen and (max-width: 767px)
+  .Navbar
+    position relative
+    height 60px
+    &__Container
+      max-width 767px
+      z-index 3
+      top 0
+      right 0
+      left 0
+      bottom 0
+    &__Menu
+      background-color DarkViolet
+      &__Hr
+        display block
+        background-color GrayishViolet
+      &__Access
+        .button
+          &--login
+            background-color DarkViolet

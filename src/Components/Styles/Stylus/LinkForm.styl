@@ -1,0 +1,47 @@
+@import "../../../Styles/Stylus/_Global";
+.form__container
+  position relative
+  top -80.5px
+  & Label
+    position absolute
+    color red
+    font-size 1em
+    font-style italic
+    top 108px
+    left 60px
+  .form  
+    display flex
+    background-image url('../../images/bg-shorten-desktop.svg')
+    background-color DarkViolet
+    padding 50px 30px 
+    border-radius 10px
+    justify-content: center
+    & Input
+      border none
+      border-radius 5px
+      margin-right 1em
+      width 80%
+      padding 0.9em
+      &::placeholder
+        font-weight WeightBolder
+        color Gray
+    .button
+      border-radius 5px
+      padding 0.9em
+
+@media screen and (max-width: 992px)
+  .form__container
+    .form
+      flex-direction column
+      & Input
+        width 100%
+        margin-bottom 1.5em
+        margin-right 0
+    & label
+      position absolute
+      color red
+      font-size 0.9em
+      font-style italic
+      top 108px
+      left 30px
+

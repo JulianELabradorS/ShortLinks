@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap");
+.container-fluid {
+  background-color: #3b3054;
+  padding-top: 11em;
+  padding-bottom: 11em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.container-fluid .form__container {
+  position: relative;
+  -webkit-box-shadow: 2px 2px 30px 25px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 30px 25px rgba(0,0,0,0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  padding: 0;
+  width: 1000px;
+  background-color: #2acfcf;
+  overflow: hidden;
+}
+.container-fluid .form__container #alert {
+  color: #f00;
+  font-weight: 700;
+  display: none;
+}
+.container-fluid .form__container form {
+  background-color: #eef0f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px;
+  width: 600px;
+}
+.container-fluid .form__container form input {
+  border: none;
+  -webkit-box-shadow: 1px 1px 20px 6px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 20px 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  height: 1.5em;
+  padding: 0 0.5em;
+}
+.container-fluid .form__container form label {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.container-fluid .form__container form button {
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.container-fluid .text__container {
+  width: 400px;
+  color: #fff;
+  text-align: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.container-fluid .text__container h1 {
+  font-weight: 700;
+}

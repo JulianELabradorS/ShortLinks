@@ -1,0 +1,40 @@
+@import "../../../Styles/Stylus/_Global";
+.Footer
+  background-color VeryDarkViolet
+  font-size 1em
+  &__Menu
+    display flex
+    justify-content: space-between
+    padding 0 
+    & img
+      padding 0
+      filter contrast(100) invert(1)
+    &__Content
+      padding 0
+      display flex
+      justify-content: space-evenly     
+      & ul
+        padding 0
+      & h3
+       margin-bottom 1em
+       color white
+       font-size Fontsize
+       font-weight WeightBolder
+      & li 
+        list-style none
+      & a
+        color Gray
+        text-decoration none
+      & a:hover
+        color Cyan
+    &__Social
+      padding 0
+      filter contrast(100) invert(1)
+@media screen and (max-width: 767px)
+  .Footer__Menu
+    flex-direction column
+    align-items: center
+    &
+    &__Content
+      flex-direction column
+      text-align center

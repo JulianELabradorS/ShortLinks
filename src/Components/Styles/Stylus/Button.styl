@@ -1,0 +1,20 @@
+@import "../../../Styles/Stylus/_Global";
+MixinButton()
+  color white
+  font-weight WeightBolder
+  border none
+  background-color Cyan
+  padding .6em 1.5em
+  margin-left 0
+[Class^="Button"]:active
+  background-color CyanLight
+.Button
+  MixinButton()
+  border-radius 5px
+.Button-rounded
+  MixinButton()
+  border-radius 50px
+.Alert
+  MixinButton()
+  border-radius 5px
+  background-color red  

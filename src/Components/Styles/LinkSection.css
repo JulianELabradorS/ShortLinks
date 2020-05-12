@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap");
+.Container {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+.Container__Hr {
+  display: none;
+}
+.Container__Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.Container__Button button {
+  border-radius: 5px;
+}
+.Container__ShortLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.Container__ShortLinks textarea {
+  color: #2acfcf;
+  width: 210px;
+  height: 25px;
+  resize: none;
+  border: none;
+}
+.Container__ShortLinks textarea:focus {
+  outline: none;
+}
+.Container__ShortLinks textarea::-moz-selection {
+  background-color: #fff;
+}
+.Container__ShortLinks textarea::selection {
+  background-color: #fff;
+}
+.Container__Link {
+  padding: 0;
+}
+.Container__Link p {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 992px) {
+  .Container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .Container__Hr {
+    display: block;
+    padding: 0;
+  }
+  .Container__Link {
+    text-align: center;
+  }
+  .Container__Button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .Container__ShortLinks {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+}

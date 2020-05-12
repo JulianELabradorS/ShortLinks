@@ -1,0 +1,66 @@
+@import "../../../Styles/Stylus/_Global";
+.ApiSection
+  background-color  SoftGray
+  margin-top 150px
+  padding-bottom 100px
+  &__Info
+    max-width 520px
+    text-align center
+    margin 50px auto
+    & h2
+      font-weight WeightBolder
+  &__Detailed
+    position relative
+    display flex
+    justify-content space-between
+    padding 100px 0
+    &__Line
+      border-top: 10px Cyan solid;
+      position: absolute;
+      width 500px
+      top: 57%
+      left: 25%    
+    & div:nth-child(3)
+      top 50px
+    & div:nth-child(4)
+      top 100px
+    &__Item
+      max-width 350px 
+      position relative
+      z-index 1 
+      background-color white
+      border-radius 5px
+      padding 0 30px
+      &__Img
+        background-color DarkViolet
+        padding 20px
+        border-radius 50%
+        position relative
+        display inline-block
+        top -40px
+        & img 
+          height 40px
+          width 40px
+      & h3
+        font-weight WeightBolder
+      & p
+        color Gray
+        font-size 0.9em
+        margin-top 1em
+        margin-bottom 2em        
+@media screen and (max-width: 992px)
+  .ApiSection
+    &__Detailed
+      flex-direction column
+      align-items: center
+      &__Line
+        width 10px
+        border-top none
+        border-left 10px Cyan solid
+        height 500px
+        top 30%
+        left 50%
+      &__Item
+        margin-bottom 50px
+      &__Item div
+        left: 110px
